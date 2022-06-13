@@ -18,6 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'madsht', // Usually your GitHub org/user name.
   projectName: 'homelab-doc', // Usually your repo name.
+  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,10 +36,6 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,6 +48,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        hideOnScroll: true,
         title: 'Homelab',
         logo: {
           alt: 'My Site Logo',
@@ -65,8 +63,9 @@ const config = {
           },
           {
             href: 'https://github.com/MadsHT/homelab-doc',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
@@ -87,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'LinkedIn',
-                href: 'www.linkedin.com/in/mads-thyssen',
+                href: 'https://www.linkedin.com/in/mads-thyssen',
               },
               {
                 label: 'Twitter',
