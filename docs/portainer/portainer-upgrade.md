@@ -2,10 +2,7 @@
 sidebar_position: 1
 ---
 
-# Portainer
-Portainer is a container management tool.
-
-## Upgrading portainer
+# Upgrading portainer
 
 To update portainer you first have to stop the container using:
 ``` sh
