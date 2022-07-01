@@ -88,10 +88,6 @@ const config = {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/in/mads-thyssen',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
             ],
           },
           {
